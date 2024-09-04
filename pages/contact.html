@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+	      name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<link href="../styles/contact.css" rel="stylesheet">
+	<title>Contact</title>
+</head>
+<body>
+	
+	<section>
+		<div class="container">
+			<div class="contact-block">
+				<div class="lc">
+					<h3>Kyiv, Mechnikova str, 14</h3>
+					<div>
+						<a href="tel:+380800211927">0800 211 927</a>
+					</div>
+					<div>
+						<a href="mailto:contact@forstudy.space">contact@forstudy.space</a>
+					</div>
+					<div class="">
+						<a href="">
+							<svg width="16" height="16">
+								<use href=""/>
+							</svg>
+						</a>
+						<p>Our page on facebook</p>
+					</div>
+				</div>
+				
+				<form class="contact-form" action="#">
+					<h1>We would like to help you</h1>
+					<input class="input" placeholder="Name" name="name" required type="text" maxlength="36" id="test"
+					       pattern="[a-zA-Z]*">
+					<textarea class="input" placeholder="Message" name="message" maxlength="400"></textarea>
+					<h3 class="caps">How to answer you?</h3>
+					<input class="input" name="phone" placeholder="Phone number" type="tel" maxlength="16">
+					<input class="input" name="email" placeholder="Email" maxlength="80" type="email"
+					       pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+					<button class="primary" type="submit" aria-label="Send request">Send message</button>
+				</form>
+			</div>
+			
+			<div class="result"></div>
+			
+		
+		</div>
+	</section>
+	
+	
+	<script>
+		document.addEventListener("submit", formSubmit);
+		
+		function formSubmit(event) {
+			event.preventDefault()
+			console.log(event, 'event')
+			const name = event.target[0].value;
+			const message = event.target[1].value;
+			const phone = event.target[2].value;
+			const email = event.target[3].value;
+			const result = document.querySelector('.result')
+			result.innerHTML = `Your name:${name},<br/> Your message:${message},  <br/> your phone:${phone}, <br/> your email : ${email}`
+			result.style.display = 'block'
+		}
+	</script>
+</body>
+</html>

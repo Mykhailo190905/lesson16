@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h5, b, strong {
+  font-weight: 700;
+}
+
+.h1 {
+  font-size: 38px;
+  line-height: 46px;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+h4 {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.btn.small {
+  padding: 5px 7px;
+  font-size: 12px;
+  line-height: 14px;
+  border-radius: 8px;
+  background: transparent;
+  letter-spacing: 1px;
+  font-weight: 700;
+  transition: background 0.3s;
+  text-transform: uppercase;
+}
+.btn.small.active, .btn.small:hover {
+  background: rgb(240, 20, 90);
+}
+
+.flex, header .container {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 710px;
+    padding: 0 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding: 0 60px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+.gradient {
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+}
+
+header {
+  padding-top: 50px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 116px;
+  z-index: 1;
+}
+header .container {
+  justify-content: space-between;
+  align-items: center;
+}
+header nav {
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+  justify-content: flex-end;
+  font-weight: 700;
+}
+header .top-block {
+  align-items: center;
+}
+header .top-list {
+  display: flex;
+  list-style: none;
+  margin-left: 6px;
+  gap: 6px;
+  align-items: center;
+}
+header .top-list li {
+  display: flex;
+  align-items: center;
+}
+header .top-list a {
+  display: inline-flex;
+}
+header .top-list li:before {
+  content: "";
+  margin-right: 6px;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+}
+
+.section-1 {
+  min-height: 100vh;
+  padding-top: 116px;
+  position: relative;
+}
+.section-1 .main-logo {
+  position: absolute;
+  width: 100vh;
+  top: 0;
+  height: 100%;
+}
+.section-1 .title {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  z-index: 1;
+}
+.section-1 .flex-column {
+  text-align: center;
+  align-items: center;
+}
+.section-1 .link {
+  color: white;
+  position: absolute;
+  bottom: 30px;
+}
+.section-1 .link:hover {
+  color: rgb(240, 20, 90);
+}
+
+.section-2 {
+  margin-top: 300px;
+  padding: 60px 0;
+}
+.section-2 #tabs {
+  max-width: 1080px;
+  margin: 0 auto;
+  align-items: center;
+}
+.section-2 #tabs ul {
+  list-style: none;
+  flex-basis: 150%;
+  text-align: right;
+}
+.section-2 #tabs ul li {
+  padding: 8px 60px 8px 16px;
+  color: rgb(179, 179, 186);
+  border-right: 1px solid rgb(179, 179, 186);
+}
+.section-2 #tabs ul li.ui-state-active {
+  background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  border-color: rgb(240, 20, 90);
+}
+.section-2 #tabs .tab-content {
+  padding: 44px 0 44px 60px;
+}
+
+.section-3 {
+  max-width: 1440px;
+}
+
+.services {
+  max-width: 1320px;
+  margin-left: 80px;
+}
+
+.container-1 {
+  max-width: 1420px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container-1 .icon {
+  max-width: 400px;
+  padding: 20px;
+  flex: 1 1 30%;
+}
+.container-1 .icon h4 {
+  margin-top: 15px;
+}
+.container-1 .icon p {
+  margin-top: 15px;
+}
+
+.section-5 {
+  background-color: white;
+}
+.section-5 .trust {
+  text-align: center;
+  color: black;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.section-5 .container-2 {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+.section-5 .row {
+  display: flex;
+  justify-content: center;
+}
+.section-5 .item {
+  flex-basis: 100%;
+}
+.section-5 .item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.section-6 {
+  max-width: 100%;
+  background-color: white;
+}
+.section-6 .publications {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+.section-6 .text p {
+  color: rgb(36, 163, 255);
+  margin-right: 1230px;
+  font-weight: 700;
+}
+.section-6 .text h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  color: black;
+  margin-right: 855px;
+}
+.section-6 .cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-left: 60px;
+}
+.section-6 .card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.section-6 .separator {
+  height: 4px;
+  background-color: rgb(230, 230, 240);
+  margin: 10px 0;
+}
+.section-6 .card img {
+  width: 100%;
+  height: auto;
+}
+.section-6 .card-content {
+  padding: 20px;
+}
+.section-6 .card-content h3 {
+  font-size: 20px;
+  color: #2979f2;
+  margin: 10px 0;
+}
+.section-6 .card-content .date {
+  display: block;
+  color: #777;
+  margin-bottom: 10px;
+}
+.section-6 .card-content p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.section-7 .line {
+  max-width: 100%;
+  background: rgb(230, 230, 240);
+  height: 3px;
+}
+.section-7 .contact-block {
+  background-color: #f8f9fc;
+  padding: 20px;
+}
+.section-7 .address {
+  align-items: center;
+  margin-bottom: 10px;
+  color: #2d2d3a;
+  font-size: 18px;
+}
+.section-7 .on-map {
+  color: #1d9ed8;
+  font-size: 16px;
+  font-weight: bold;
+}
+.section-7 .contact-info {
+  display: flex;
+  align-items: center;
+}
+.section-7 .social-icon img {
+  width: 24px;
+  height: 24px;
+}
+.section-7 .phone-number {
+  color: #2d2d3a;
+  font-size: 18px;
+  margin-right: 10px;
+}
+.section-7 .email {
+  color: #1d9ed8;
+  font-size: 18px;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
