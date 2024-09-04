@@ -9,6 +9,24 @@ const replace = require('gulp-replace');
 
 const isProduction = false
 
+function minifyCSS() {
+  return gulp.src('./styles/style.css')
+      .pipe(cleanCSS())
+      .pipe(gulp.dest('./dist/css'));
+}
+
+function minifyJS() {
+  return gulp.src('./js/index.js')
+      .pipe(uglify())
+      .pipe(gulp.dest('./dist/js'));
+}
+
+function compressImages() {
+  return gulp.src('./images/*')
+      .pipe(imagemin())
+      .pipe(gulp.dest('./dist/images'));
+}
+
 const paths = {
   styles: {
     src: 'styles/**/*.scss',
