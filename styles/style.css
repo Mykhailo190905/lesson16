@@ -211,6 +211,24 @@ header .top-list li:before {
   margin-left: 80px;
 }
 
+.services h3 {
+  font-weight: 700;
+  font-size: 38px;
+  color: rgb(179, 179, 186);
+  background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  border-color: rgb(240, 20, 90);
+}
+
+.services h6 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: rgb(36, 163, 255);
+}
+
 .container-1 {
   max-width: 1420px;
   display: flex;
@@ -224,6 +242,7 @@ header .top-list li:before {
 }
 .container-1 .icon h4 {
   margin-top: 15px;
+  color: rgb(36, 163, 255);
 }
 .container-1 .icon p {
   margin-top: 15px;
@@ -237,6 +256,7 @@ header .top-list li:before {
   color: black;
   margin-top: 40px;
   margin-bottom: 30px;
+  font-weight: 700;
 }
 .section-5 .container-2 {
   display: flex;
@@ -274,8 +294,13 @@ header .top-list li:before {
   font-size: 36px;
   margin-bottom: 30px;
   margin-top: 30px;
-  color: black;
+  color: rgb(179, 179, 186);
   margin-right: 855px;
+  background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  border-color: rgb(240, 20, 90);
 }
 .section-6 .cards {
   display: flex;

@@ -124,6 +124,23 @@ header {
   margin-left: 80px;
   
 }
+.services h3{
+  font-weight: 700;
+  font-size: 38px;
+  color: rgba(179, 179, 186, 1);
+  background: $gradient-text-reversed;
+  background-clip: text;
+  color: transparent;
+  border-color: $accent;
+}
+
+.services h6{
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: rgba(36, 163, 255, 1);
+
+}
 
 .container-1 {
   max-width: 1420px;
@@ -137,6 +154,8 @@ header {
   }
   .icon h4 {
     margin-top: 15px; 
+    color: rgba(36, 163, 255, 1);
+
   }
   
   .icon p {
@@ -152,6 +171,7 @@ header {
     color: black;
     margin-top: 40px;
     margin-bottom: 30px;
+    font-weight: 700;
   }
 
   .container-2 {
@@ -197,8 +217,12 @@ background-color: white;
     font-size: 36px;
     margin-bottom: 30px;
     margin-top: 30px;
-    color: black;
+    color: rgba(179, 179, 186, 1);
     margin-right: 855px;
+    background: $gradient-text-reversed;
+    background-clip: text;
+    color: transparent;
+    border-color: $accent;
 
 }
 
