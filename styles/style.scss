@@ -332,5 +332,99 @@ background-color: white;
 }
 
 
+.section-slider{
+  background-color: #f5f5f5;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    .slider{
+      display: flex;
+        align-items: center;
+        max-width: 1200px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 30px;
+    }
+    
+.slider-text{
+  max-width: 600px;
+}
+
+.team-title {
+  color: #00A4E0;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.main-text {
+  color: #FF477E;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.person-name {
+  color: #333333;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.person-position {
+  color: #999999;
+  font-size: 16px;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.content-wrapper img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 30px; /* Отступ между изображением и текстом */
+}
+
+  .slider-item{
+    padding: 40px;
+    background: rgba(245, 245, 250, 1);
+    max-width: 100%;
+    display: block; /* Оставляем блоковый элемент */
+    img{
+      width: 400px;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+      margin-right: 30px;
+    }
+  }
+
+  .slick-prev:before, .slick-next:before {
+    color: black;
+  }
+
+  .slick-dots {
+    bottom: -47px;
+    li{
+      button:before {
+          color: rgba(36, 163, 255, 1);
+          opacity: 0,2;
+          font-size: 16px;
+          transition: 0.3s;
+  }
+  &.slick-active{
+    button:before {
+      opacity: 1;
+        }
+      }
+    }
+  } 
+}
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -383,4 +384,87 @@ header .top-list li:before {
   color: #1d9ed8;
   font-size: 18px;
   font-weight: bold;
+}
+
+.section-slider {
+  background-color: #f5f5f5;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-slider .slider {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+}
+.section-slider .slider-text {
+  max-width: 600px;
+}
+.section-slider .team-title {
+  color: #00A4E0;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.section-slider .main-text {
+  color: #FF477E;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.section-slider .person-name {
+  color: #333333;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.section-slider .person-position {
+  color: #999999;
+  font-size: 16px;
+}
+.section-slider .content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.section-slider .content-wrapper img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 30px; /* Отступ между изображением и текстом */
+}
+.section-slider .slider-item {
+  padding: 40px;
+  background: rgb(245, 245, 250);
+  max-width: 100%;
+  display: block; /* Оставляем блоковый элемент */
+}
+.section-slider .slider-item img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 30px;
+}
+.section-slider .slick-prev:before, .section-slider .slick-next:before {
+  color: black;
+}
+.section-slider .slick-dots {
+  bottom: -47px;
+}
+.section-slider .slick-dots li button:before {
+  color: rgb(36, 163, 255);
+  opacity: 0, 2;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.section-slider .slick-dots li.slick-active button:before {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
